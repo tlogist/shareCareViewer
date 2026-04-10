@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShareCare DICOM Viewer</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="app">
+    <aside id="study-browser">
+      <h2>Studies</h2>
+      <div id="study-list"></div>
+    </aside>
+    <main id="main-area">
+      <div id="toolbar"></div>
+      <div id="viewport-container">
+        <div id="viewport-element"></div>
+        <div id="empty-state">Select a series to view</div>
+      </div>
+    </main>
+    <aside id="metadata-panel" class="hidden">
+      <h2>DICOM Tags</h2>
+      <div id="metadata-content"></div>
+    </aside>
+  </div>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
